@@ -1,1 +1,1 @@
-# BookNest-project
+BookNest is a command-line application for managing a collection of books and authors. Users can view, search, borrow, return, and delete books. The app is built with Python and uses custom model classes to simulate a database-like structure.
