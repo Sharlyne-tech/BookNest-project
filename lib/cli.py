@@ -1,8 +1,8 @@
 from lib.helpers import view_all_books, search_books_by_title, borrow_book, return_book, delete_book
 from lib.seeds import seed_data
 
-# Preload books
-books = seed_data()
+
+authors, books = seed_data()
 
 def menu():
     while True:
@@ -15,7 +15,7 @@ def menu():
         print("6. Exit")
 
         choice = input("Enter your choice (1–6): ").strip()
-        print(f"You entered: '{choice}'")  # Debug line
+        print(f"You entered: '{choice}'")  
 
         if choice == "1":
             view_all_books(books)
@@ -39,5 +39,5 @@ def menu():
         else:
             print("Invalid choice. Try again.")
 
-# Run the menu
+
 menu()
